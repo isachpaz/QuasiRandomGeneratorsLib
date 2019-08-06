@@ -46,6 +46,7 @@
     <Compile Include="HaltonSequence2D.cs" />
     <Compile Include="HaltonSequence3D.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomSequence.cs" />
     <Compile Include="VanDerCorputSequence.cs" />
     <Compile Include="MyUtils.cs" />
   </ItemGroup>
