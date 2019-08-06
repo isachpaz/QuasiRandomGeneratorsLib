@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 
+
 namespace QuasiRandomGeneratorsLib.Tests
 {
     [TestFixture]
@@ -33,6 +34,17 @@ namespace QuasiRandomGeneratorsLib.Tests
             foreach (var tuple in haltonSeq.GetSequence().Zip(_seqBase2, Tuple.Create))
             {
                 Assert.AreEqual(tuple.Item1[0], tuple.Item2);
+            }
+        }
+
+        [Test]
+        public void Halton1D_GetDoubles_Test()
+        {
+            var haltonSeq = new HaltonSequence1D();
+
+            foreach (var tuple in haltonSeq.GetDoubles().Zip(_seqBase2, Tuple.Create))
+            {
+                Assert.AreEqual(tuple.Item1, tuple.Item2);
             }
         }
 
