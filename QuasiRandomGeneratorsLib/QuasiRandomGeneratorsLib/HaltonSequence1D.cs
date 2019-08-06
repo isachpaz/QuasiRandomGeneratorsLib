@@ -3,20 +3,10 @@ using System.Collections.Generic;
 
 namespace QuasiRandomGeneratorsLib
 {
-    public class HaltonSequence1D
+    public class HaltonSequence1D : HaltonSequence
     {
-        private VanDerCorputSequence _sequenceX;
-        public HaltonSequence1D()
+        public HaltonSequence1D() : base(dimension: 1)
         {
-            _sequenceX = new VanDerCorputSequence(2);
-        }
-
-        public IEnumerable<double> GetSequence()
-        {
-            foreach (Tuple<long, long> tuple in _sequenceX)
-            {
-                yield return (double) tuple.Item1 / (double) tuple.Item2;
-            }
         }
     }
 }
