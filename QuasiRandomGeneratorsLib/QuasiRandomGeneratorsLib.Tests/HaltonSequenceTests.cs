@@ -27,33 +27,33 @@ namespace QuasiRandomGeneratorsLib.Tests
         }
 
         [Test]
-        public void Halton1D_First_Numbers()
+        public void Halton1D_First_Numbers_Test()
         {
             var haltonSeq = new HaltonSequence1D();
             foreach (var tuple in haltonSeq.GetSequence().Zip(_seqBase2, Tuple.Create))
             {
-                Assert.AreEqual(tuple.Item1, tuple.Item2);
+                Assert.AreEqual(tuple.Item1[0], tuple.Item2);
             }
         }
 
         [Test]
-        public void Halton2D_X_First_Numbers()
+        public void Halton2D_X_First_Numbers_Test()
         {
             var haltonSeq = new HaltonSequence2D();
             foreach (var tuple in haltonSeq.GetSequence().Zip(_seqBase2, Tuple.Create))
             {
-                Assert.AreEqual(tuple.Item1.Item1, tuple.Item2);
+                Assert.AreEqual(tuple.Item1[0], tuple.Item2);
             }
         }
 
 
         [Test]
-        public void Halton2D_Y_First_Numbers()
+        public void Halton2D_Y_First_Numbers_Test()
         {
             var haltonSeq = new HaltonSequence2D();
             foreach (var tuple in haltonSeq.GetSequence().Zip(_seqBase3, Tuple.Create))
             {
-                Assert.AreEqual(tuple.Item1.Item2, tuple.Item2);
+                Assert.AreEqual(tuple.Item1[1], tuple.Item2);
             }
         }
 
