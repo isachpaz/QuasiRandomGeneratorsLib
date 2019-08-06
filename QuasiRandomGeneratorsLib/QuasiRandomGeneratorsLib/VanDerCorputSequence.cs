@@ -15,7 +15,7 @@ namespace QuasiRandomGeneratorsLib
     /// base 5:  0  1/5  2/5  3/5  4/5  1/25  6/25  11/25  16/25  21/25
     /// </summary>
     /// <see cref="http://rosettacode.org/wiki/Van_der_Corput_sequence"/>
-    public class VanDerCorputSequence : IEnumerable<Tuple<long, long>>
+    internal class VanDerCorputSequence : IEnumerable<Tuple<long, long>>
     {
         /// <summary>
         /// Number base for the sequence, which must bwe two or more.

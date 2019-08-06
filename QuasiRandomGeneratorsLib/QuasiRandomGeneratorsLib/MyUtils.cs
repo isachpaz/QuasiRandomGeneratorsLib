@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace QuasiRandomGeneratorsLib
 {
-    public static class MyUtils
+    internal static class MyUtils
     {
         public static IEnumerable<double> ToDouble(this IEnumerable<Tuple<long, long>> input)
         {

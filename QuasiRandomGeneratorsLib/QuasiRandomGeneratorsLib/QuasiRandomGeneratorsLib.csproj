@@ -49,5 +49,8 @@
     <Compile Include="VanDerCorputSequence.cs" />
     <Compile Include="MyUtils.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="QuasiRandomGeneratorsLib.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

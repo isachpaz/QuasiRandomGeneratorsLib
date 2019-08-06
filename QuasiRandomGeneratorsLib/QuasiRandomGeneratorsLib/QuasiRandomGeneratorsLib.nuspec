@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>1.0.1</version>
+    <title>$title$</title>
+    <authors>Ilias Sachpazidis</authors>
+    <owners>Ilias Sachpazidis</owners>
+    <projectUrl>https://github.com/isachpaz/QuasiRandomGeneratorsLib</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>QuasiRandomGenerator, HaltonSequence N dimensions</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>HaltonSequence Halton Random Generator</tags>
+  </metadata>
+</package>
