@@ -9,5 +9,10 @@ namespace QuasiRandomGeneratorsLib
         public HaltonSequence2D() : base(dimension: 2)
         {
         }
+
+        public IEnumerable<Tuple<double, double>> GetDoubles()
+        {
+            return base.GetSequence().Select(x => Tuple.Create(x[0], x[1]));
+        }
     }
 }
