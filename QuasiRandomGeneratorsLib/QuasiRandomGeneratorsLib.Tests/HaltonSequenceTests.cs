@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MoreLinq.Extensions;
+using MyUtilsLib;
 using NUnit.Framework;
 
 
@@ -104,9 +106,12 @@ namespace QuasiRandomGeneratorsLib.Tests
         public void Halton2D_GetDoubles_Test()
         {
             var halton = new HaltonSequence2D();
-            foreach (Tuple<double, double> tuple in halton.GetDoubles())
+
+            
+            foreach (var item in MyUtils.ZipThreeEnumerable(halton.GetDoubles(), _seqBase2, _seqBase3))
             {
-                
+                Assert.AreEqual(item.Item1.Item1, item.Item2);
+                Assert.AreEqual(item.Item1.Item2, item.Item3);
             }
         }
 

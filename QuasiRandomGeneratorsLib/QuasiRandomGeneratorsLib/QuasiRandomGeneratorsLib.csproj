@@ -48,10 +48,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomSequence.cs" />
     <Compile Include="VanDerCorputSequence.cs" />
-    <Compile Include="MyUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="QuasiRandomGeneratorsLib.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyUtilsLib\MyUtilsLib.csproj">
+      <Project>{18AA8900-C0E9-4625-B50B-896F7F6DC634}</Project>
+      <Name>MyUtilsLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
