@@ -45,5 +45,13 @@ namespace MyUtilsLib
                 yield return tuple;
             }
         }
+
+        public static IEnumerable<Tuple<T1, T2, T3>> ZipThreeEnumerable<T1, T2, T3>(IEnumerable<T1> list1, IEnumerable<T2> list2, IEnumerable<T3> list3)
+        {
+            foreach (var tuple in list1.Zip(list2, Tuple.Create).Zip(list3, Tuple.Create))
+            {
+                yield return new Tuple<T1, T2, T3>(tuple.Item1.Item1, tuple.Item1.Item2, tuple.Item2);
+            }
+        }
     }
 }
