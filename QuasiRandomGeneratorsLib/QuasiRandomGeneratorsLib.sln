@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuasiRandomGeneratorsLib", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuasiRandomGeneratorsLib.Tests", "QuasiRandomGeneratorsLib.Tests\QuasiRandomGeneratorsLib.Tests.csproj", "{243ACDCB-4915-45BD-B34E-9B6057637FF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyUtilsLib", "MyUtilsLib\MyUtilsLib.csproj", "{18AA8900-C0E9-4625-B50B-896F7F6DC634}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{243ACDCB-4915-45BD-B34E-9B6057637FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{243ACDCB-4915-45BD-B34E-9B6057637FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{243ACDCB-4915-45BD-B34E-9B6057637FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AA8900-C0E9-4625-B50B-896F7F6DC634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AA8900-C0E9-4625-B50B-896F7F6DC634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AA8900-C0E9-4625-B50B-896F7F6DC634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AA8900-C0E9-4625-B50B-896F7F6DC634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
