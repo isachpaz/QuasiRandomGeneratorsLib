@@ -100,6 +100,15 @@ namespace QuasiRandomGeneratorsLib.Tests
            
         }
 
+        [Test]
+        public void Halton2D_GetDoubles_Test()
+        {
+            var halton = new HaltonSequence2D();
+            foreach (Tuple<double, double> tuple in halton.GetDoubles())
+            {
+                
+            }
+        }
 
     }
 }
