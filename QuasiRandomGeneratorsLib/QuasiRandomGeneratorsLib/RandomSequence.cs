@@ -30,6 +30,10 @@ namespace QuasiRandomGeneratorsLib
             _rnd = new Lazy<Random>(() => new Random(seed));
         }
 
+        public RandomSequence(Func<int> seed) : this(seed())
+        {
+        }
+
         public IEnumerable<double> GetDoubles()
         {
             while (true)
