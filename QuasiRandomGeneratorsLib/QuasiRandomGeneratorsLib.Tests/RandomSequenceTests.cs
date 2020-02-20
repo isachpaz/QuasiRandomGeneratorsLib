@@ -23,11 +23,11 @@ namespace QuasiRandomGeneratorsLib.Tests
         [TestCase(Int16.MaxValue)]
         public void Random_with_Seed_Test(int seedMax)
         {
-            Func<int> randomSeed = 
+            Func<int> randomSeed =
                 () => Helpers.SeedHelper.GetRandomSeed(
                     new RNGCryptoServiceProvider(), seedMax);
 
-            RandomSequence  seq = new RandomSequence(seed: randomSeed);
+            RandomSequence seq = new RandomSequence(seed: randomSeed);
             var values = seq.GetDoubles().Take(100).ToList();
             Assert.AreEqual(values.Count(), 100);
             Assert.LessOrEqual(seq.Seed, seedMax);
@@ -45,7 +45,6 @@ namespace QuasiRandomGeneratorsLib.Tests
                         seedMax);
 
                 RandomSequence seq = new RandomSequence(seed: randomSeed);
-                //var values = seq.GetDoubles().Take(100).ToList();
             });
         }
     }
